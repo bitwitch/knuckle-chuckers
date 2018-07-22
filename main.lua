@@ -6,8 +6,6 @@ gameLoop = GameLoop:create()
 
 WIDTH     = love.graphics.getWidth()
 HEIGHT    = love.graphics.getHeight()
-GAME_TIME = 0
-
 
 function createBox(x, y)
 	local b = {} 
@@ -33,14 +31,10 @@ function createBox(x, y)
 end
 
 function love.load()
-	r1 = createBox(64,64)
-	r2 = createBox(96,96)
-	r1:load()
-	r2:load()
+
 end
 
 function love.update(dt)
-	GAME_TIME = GAME_TIME + dt
 	gameLoop:update(dt)
 end
 

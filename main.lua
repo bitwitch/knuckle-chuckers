@@ -7,8 +7,8 @@ function love.load()
 	renderer = Renderer:create()
 	gameLoop = GameLoop:create() 
 
-	WIDTH     = love.graphics.getWidth()
-	HEIGHT    = love.graphics.getHeight()
+	WIDTH  = love.graphics.getWidth()
+	HEIGHT = love.graphics.getHeight()
 
 	StartScreen = require("start_screen")
 end
